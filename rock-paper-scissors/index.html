@@ -4,64 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UV-Compatible" content="IE-edge">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link href=""
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
 
 </head>
 <body>
-    <script>
-        const Choices = ["rock", "paper", "scissors"];
-        let humanScore = 0;
-        let computerScore = 0;
 
-        function getComputerChoice(){
-            return Choices[Math.floor(Math.random() * Choices.length)];
-        };
+    <h1>Rock Paper Scissors</h1>
 
+    <div class="container">
+        <h3>Choose your play:</h3>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors" >Scissors</button>
+        <p id="computerChoice"></p>
+        <br>
+        <p id="scores"></p>
+        <br><br>
+        <p id="result"></p>
+    </div>
 
-        function getHumanChoice(){
-            return prompt("Rock, Paper, Scissors?");
-        };
-
-        function playRound(humanChoice, computerChoice){
-            humanChoice = humanChoice.toLowerCase();
-            console.log("Computer choice: " + computerChoice);
-            if (humanChoice == computerChoice){
-            }
-            else if (
-                (humanChoice === "rock" && computerChoice ==="scissors") ||
-                (humanChoice === "paper" && computerChoice === "rock") ||
-                (humanChoice === "scissors" && computerChoice === "paper")
-            ){
-                humanScore++;
-            }
-            else{
-                computerScore++;
-            }
-        };
-
-        function playGame(){
-            for (let i = 1; i <= 5; i++){
-                console.log("Round " + i + ":");
-                playRound(getHumanChoice(), getComputerChoice());
-
-            }
-            console.log("Computer Score: " + computerScore);
-            console.log("Your Score: " + humanScore);
-            
-            if (humanScore === computerScore){
-                console.log("Draw");
-            }
-            else if (humanScore < computerScore){
-                console.log("You lose");
-            }
-            else{
-                console.log("You Win!!");
-            }
-        }
-
-        playGame();
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
