@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="layout">
+        <h1>Etch a Sketch</h1>
+
+        <div class="divs-side">
+        </div>
+
+        <div class="actions-side">
+            <p id="divsNumber"></p>
+            <input type="range" id="divSelector" min="0" max="4000" value="50">
+            <input type="color" id="colorSelector" value="red">
+            <button id="clearBtn" onclick="handleClear()">Clear Squares</button>
+            <button id="clearColors" onclick="hnadleColorClear()">Clear Colors</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
