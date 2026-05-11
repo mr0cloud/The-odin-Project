@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b203c;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 500px;
+    height: 400px;
+
+    border: 4px solid #1e3a5f;
+    border-radius: 10px;
+
+    background-color: #152f51;
+}
+
+.textArea {
+    display: flex;
+    align-items: center;
+    width: 470px;
+    height: 40px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(164, 196, 237, 0.7);
+    border-radius: 10px;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    width: 480px;
+    height: 320px;
+}
+
+.numbers-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+
+    width: 250px;
+    height: 280px;
+    padding: 10px;
+}
+
+.operators-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+
+
+    width: 150px;
+    height: 280px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.operations-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+button {
+    height: 50px;
+    font-size: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+}
+
+button:hover {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.3s ease;
+
+    box-shadow:
+        0 0 10px #a4c4edac,
+        0 0 20px #152f51;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.numbers {
+    background-color: #667cdb96;
+}
+
+.operations {
+    background-color: rgba(237, 5, 5, 0.659);
+    width: 85px;
+}
+
+#clear,
+#equal {
+    width: 180px;
+    height: 90px;
+    background-color: #F7B538;
+
+}
+
+.zero {
+    grid-column: span 3;
+}
