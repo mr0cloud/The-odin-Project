@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+    <header>
+        <h1>My library</h1>
+        <p>The most personal is the most Creative</p>
+        <button id="openForm">Add Book</button>
+    </header>
+
+
+    <main>
+        <h4>My Books</h4>
+        <div class="books-container" id="books-container">
+
+        </div>
+        </div>
+    </main>
+    <div class="form-container" id="form-container">
+        <h4>Adding new book</h4>
+        <form>
+            <label for="title">Book name:</label>
+            <input type="text" id="title">
+
+
+            <label for="author">Author:</label>
+            <input type="text" id="author">
+
+
+            <label for="pages">Number of Pages:</label>
+            <input type="number" id="pages">
+
+
+            <label for="read">Did you read it?</label>
+            <select name="read" id="read">
+                <option value="yes" selected> Yes </option>
+                <option value="no"> No </option>
+            </select>
+            <button type="button" id="closeForm">Add New Book</button>
+        </form>
+    </div>
+
+<script src="app.js"></script>
+</body>
+
+</html>
